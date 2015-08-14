@@ -15,6 +15,7 @@
 		76992B811B7D968F00C2271F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76992B7F1B7D968F00C2271F /* LaunchScreen.xib */; };
 		76992B8D1B7D968F00C2271F /* TraditionalColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76992B8C1B7D968F00C2271F /* TraditionalColorTests.m */; };
 		76992B981B7D995200C2271F /* UIColor+TraditionalColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 76992B971B7D995200C2271F /* UIColor+TraditionalColor.m */; };
+		76992B9B1B7DA18900C2271F /* traditional_colors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76992B9A1B7DA18900C2271F /* traditional_colors.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		76992B8C1B7D968F00C2271F /* TraditionalColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraditionalColorTests.m; sourceTree = "<group>"; };
 		76992B961B7D995200C2271F /* UIColor+TraditionalColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TraditionalColor.h"; sourceTree = "<group>"; };
 		76992B971B7D995200C2271F /* UIColor+TraditionalColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TraditionalColor.m"; sourceTree = "<group>"; };
+		76992B9A1B7DA18900C2271F /* traditional_colors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = traditional_colors.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				76992B7A1B7D968F00C2271F /* Main.storyboard */,
 				76992B7D1B7D968F00C2271F /* Images.xcassets */,
 				76992B7F1B7D968F00C2271F /* LaunchScreen.xib */,
+				76992B9A1B7DA18900C2271F /* traditional_colors.jpg */,
 				76992B701B7D968F00C2271F /* Supporting Files */,
 			);
 			path = TraditionalColor;
@@ -215,6 +218,7 @@
 				76992B7C1B7D968F00C2271F /* Main.storyboard in Resources */,
 				76992B811B7D968F00C2271F /* LaunchScreen.xib in Resources */,
 				76992B7E1B7D968F00C2271F /* Images.xcassets in Resources */,
+				76992B9B1B7DA18900C2271F /* traditional_colors.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +438,7 @@
 				76992B921B7D968F00C2271F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76992B931B7D968F00C2271F /* Build configuration list for PBXNativeTarget "TraditionalColorTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +447,7 @@
 				76992B951B7D968F00C2271F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
