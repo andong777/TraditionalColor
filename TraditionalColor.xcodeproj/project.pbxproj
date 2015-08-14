@@ -14,6 +14,7 @@
 		76992B7E1B7D968F00C2271F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76992B7D1B7D968F00C2271F /* Images.xcassets */; };
 		76992B811B7D968F00C2271F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76992B7F1B7D968F00C2271F /* LaunchScreen.xib */; };
 		76992B8D1B7D968F00C2271F /* TraditionalColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76992B8C1B7D968F00C2271F /* TraditionalColorTests.m */; };
+		76992B981B7D995200C2271F /* UIColor+TraditionalColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 76992B971B7D995200C2271F /* UIColor+TraditionalColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		76992B861B7D968F00C2271F /* TraditionalColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraditionalColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76992B8B1B7D968F00C2271F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76992B8C1B7D968F00C2271F /* TraditionalColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraditionalColorTests.m; sourceTree = "<group>"; };
+		76992B961B7D995200C2271F /* UIColor+TraditionalColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TraditionalColor.h"; sourceTree = "<group>"; };
+		76992B971B7D995200C2271F /* UIColor+TraditionalColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TraditionalColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		76992B6F1B7D968F00C2271F /* TraditionalColor */ = {
 			isa = PBXGroup;
 			children = (
+				76992B991B7D995800C2271F /* UIColor+TraditionalColor */,
 				76992B741B7D968F00C2271F /* AppDelegate.h */,
 				76992B751B7D968F00C2271F /* AppDelegate.m */,
 				76992B771B7D968F00C2271F /* ViewController.h */,
@@ -117,6 +121,15 @@
 				76992B8B1B7D968F00C2271F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76992B991B7D995800C2271F /* UIColor+TraditionalColor */ = {
+			isa = PBXGroup;
+			children = (
+				76992B961B7D995200C2271F /* UIColor+TraditionalColor.h */,
+				76992B971B7D995200C2271F /* UIColor+TraditionalColor.m */,
+			);
+			name = "UIColor+TraditionalColor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				76992B791B7D968F00C2271F /* ViewController.m in Sources */,
 				76992B761B7D968F00C2271F /* AppDelegate.m in Sources */,
 				76992B731B7D968F00C2271F /* main.m in Sources */,
+				76992B981B7D995200C2271F /* UIColor+TraditionalColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TraditionalColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TraditionalColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

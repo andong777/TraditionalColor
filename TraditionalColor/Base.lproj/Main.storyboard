@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我能吞下玻璃而不伤身体" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-bQ-KGO">
+                                <rect key="frame" x="16" y="20" width="568" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6um-eJ-vWF">
+                                <rect key="frame" x="304" y="328" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Wk-YK-dtd"/>
+                                </constraints>
+                                <state key="normal" title="切换背景色">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nx-sg-hf7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白色" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-mf-8Xh">
+                                <rect key="frame" x="16" y="328" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KEi-nn-CVf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="aCD-Jb-Wwj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aCD-Jb-Wwj"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vLU-bQ-KGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0tl-ng-Ila"/>
+                            <constraint firstItem="vLU-bQ-KGO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="73e-XA-ER3"/>
+                            <constraint firstItem="ChG-mf-8Xh" firstAttribute="top" secondItem="vLU-bQ-KGO" secondAttribute="bottom" constant="8" id="7AC-so-idI"/>
+                            <constraint firstItem="6um-eJ-vWF" firstAttribute="leading" secondItem="ChG-mf-8Xh" secondAttribute="trailing" constant="8" id="7ev-AY-FcC"/>
+                            <constraint firstItem="vLU-bQ-KGO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Akr-a0-tzV"/>
+                            <constraint firstItem="ChG-mf-8Xh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RUd-VO-Nm3"/>
+                            <constraint firstItem="ChG-mf-8Xh" firstAttribute="width" secondItem="6um-eJ-vWF" secondAttribute="width" id="Uhp-0Y-Bcu"/>
+                            <constraint firstItem="vLU-bQ-KGO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="abI-Y1-l1b"/>
+                            <constraint firstItem="6um-eJ-vWF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ktz-YD-oo0"/>
+                            <constraint firstItem="6um-eJ-vWF" firstAttribute="top" secondItem="vLU-bQ-KGO" secondAttribute="bottom" constant="8" id="tHU-3s-Gak"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="6um-eJ-vWF" id="yUE-eI-rZq"/>
+                        <outlet property="label" destination="ChG-mf-8Xh" id="g0w-yS-oC0"/>
+                        <outlet property="text" destination="vLU-bQ-KGO" id="cTK-I0-Xpm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

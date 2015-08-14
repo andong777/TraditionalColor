@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+TraditionalColor.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextView *text;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -22,6 +27,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)randomColor:(UIButton *)sender {
+    UIColor *color = [UIColor randomTraditionalColor];
+    self.text.backgroundColor = color;
+    self.text.textColor = [UIColor contrastingColorOfColor:color];
+    self.label.text = [UIColor nameOfTraditionalColor:color];
 }
 
 @end
